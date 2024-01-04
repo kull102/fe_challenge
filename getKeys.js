@@ -5,6 +5,7 @@ export const getKeys = (fileName) => {
   try {
     const data = fs.readFileSync(`./data/${fileName}`, "utf8");
     jsonData = JSON.parse(data);
+    
   } catch (err) {
     console.error(err);
   }
